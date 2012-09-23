@@ -5,6 +5,8 @@ import java.awt.*;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.IOException;
 
 public class MenuPanel extends JPanel {
 
@@ -36,12 +38,12 @@ public class MenuPanel extends JPanel {
 		menuPanel.setBackground(new Color(204, 204, 255));
 		menuPanel.setLayout(null);
 		
-		manageDocButton = new JButton("เพิ่มเอกสารใหม่");
+		manageDocButton = new JButton("‡πÄ‡∏û‡∏¥‡πà‡∏°‡πÄ‡∏≠‡∏Å‡∏™‡∏≤‡∏£‡πÉ‡∏´‡∏°‡πà");
 		manageDocButton.setForeground(Color.BLACK);
 		manageDocButton.setFont(new Font("Cordia New", Font.PLAIN, 21));
 		manageDocButton.setBounds(38, 51, 126, 33);
 		
-		searchButton = new JButton("ค้นหา");
+		searchButton = new JButton("‡∏Ñ‡πâ‡∏ô‡∏´‡∏≤");
 		searchButton.setForeground(Color.BLACK);
 		searchButton.setFont(new Font("Cordia New", Font.PLAIN, 21));
 		searchButton.setBounds(38, 102, 126, 33);
@@ -58,14 +60,21 @@ public class MenuPanel extends JPanel {
 		
 		btnFuckButton = new JButton("fuck button");
 		btnFuckButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				// fuck here
+			public void actionPerformed(ActionEvent e) {
+				if(Desktop.getDesktop().isSupported(Desktop.Action.OPEN)) {
+					try {
+						Desktop.getDesktop().open(new File("asset/iconDTS.gif"));
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}	
 			}
 		});
 		btnFuckButton.setBounds(42, 157, 122, 33);
 		menuPanel.add(btnFuckButton);
 		
-//		reportButton = new JButton("�ʴ���§ҹ");
+//		reportButton = new JButton("ÔøΩ ¥ÔøΩÔøΩÔøΩ¬ß“π");
 //		reportButton.setForeground(Color.BLACK);
 //		reportButton.setFont(new Font("Cordia New", Font.PLAIN, 21));
 //		reportButton.setBounds(38, 153, 126, 33);
