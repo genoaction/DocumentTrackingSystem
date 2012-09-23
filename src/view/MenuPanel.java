@@ -14,6 +14,7 @@ public class MenuPanel extends JPanel {
 	private static final int FRAME_HEIGHT = 359;
 	static DTS_GUI frame; 
 	private JButton reportButton;
+	private JButton btnFuckButton;
 	
 	/**
 	 * Create the panel.
@@ -54,6 +55,15 @@ public class MenuPanel extends JPanel {
 		menuPanel.add(manageDocButton);
 		
 		menuPanel.add(searchButton);
+		
+		btnFuckButton = new JButton("fuck button");
+		btnFuckButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				// fuck here
+			}
+		});
+		btnFuckButton.setBounds(42, 157, 122, 33);
+		menuPanel.add(btnFuckButton);
 		
 //		reportButton = new JButton("�ʴ���§ҹ");
 //		reportButton.setForeground(Color.BLACK);

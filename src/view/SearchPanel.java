@@ -16,6 +16,10 @@ public class SearchPanel extends JPanel {
 	private static final int FRAME_HEIGHT = 420;
 	static DTS_GUI frame; 
 	
+	private JLabel docIDUpLabel, dateUpLabel, timeUpLabel, SRNameLabel;
+	private JTextField docIDUpField, timeUpField;
+	private JRadioButton receiveRadioButton, sendRadioButton;
+	private JButton addDateUpButton, cancelUpButton, saveUpButton;
 	private JTextField searchField;
 	private JLabel searchLabel, searchByLabel, typeDocLabel;
 	private JComboBox searchByComboBox, typeDocComboBox;
@@ -124,6 +128,22 @@ public class SearchPanel extends JPanel {
 		createDocPanel.add(typeDocComboBox);
 		createDocPanel.add(typeDocLabel);
 		createDocPanel.add(scrollPane);
+		
+		tabbedPane.addTab("อัพเดทสถานะ", null, updateDocPanel, null);
+		updateDocPanel.add(docIDUpLabel);
+		updateDocPanel.add(docIDUpField);
+		updateDocPanel.add(sendRadioButton);
+		updateDocPanel.add(receiveRadioButton);
+		updateDocPanel.add(docInOutChoice);
+		updateDocPanel.add(SRNameLabel);
+		updateDocPanel.add(dateUpLabel);
+		updateDocPanel.add(timeUpLabel);
+		updateDocPanel.add(timeUpField);
+		updateDocPanel.add(addDateUpButton);
+		updateDocPanel.add(saveUpButton);
+		updateDocPanel.add(cancelUpButton);
+		updateDocPanel.add(dateUpField);
+		updateDocPanel.add(SRNameComboBox);
 
 	}
 

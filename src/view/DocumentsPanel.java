@@ -264,22 +264,6 @@ public class DocumentsPanel extends JPanel {
 		createDocPanel.add(dateDocField);
 		createDocPanel.add(addDateButton);
 
-		tabbedPane.addTab("อัพเดทสถานะ", null, updateDocPanel, null);
-		updateDocPanel.add(docIDUpLabel);
-		updateDocPanel.add(docIDUpField);
-		updateDocPanel.add(sendRadioButton);
-		updateDocPanel.add(receiveRadioButton);
-		updateDocPanel.add(docInOutChoice);
-		updateDocPanel.add(SRNameLabel);
-		updateDocPanel.add(dateUpLabel);
-		updateDocPanel.add(timeUpLabel);
-		updateDocPanel.add(timeUpField);
-		updateDocPanel.add(addDateUpButton);
-		updateDocPanel.add(saveUpButton);
-		updateDocPanel.add(cancelUpButton);
-		updateDocPanel.add(dateUpField);
-		updateDocPanel.add(SRNameComboBox);
-
 	}
 
 	private void buttonController(){
