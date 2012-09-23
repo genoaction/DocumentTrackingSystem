@@ -244,7 +244,7 @@ public class DocumentsPanel extends JPanel {
 	public void createLayout(){
 		add(tabbedPane, "cell 0 0,grow");
 
-		tabbedPane.addTab("���ҧ�͡���", null, createDocPanel, null);
+		tabbedPane.addTab("เอกสาร", null, createDocPanel, null);
 		createDocPanel.add(docIDLabel);
 		createDocPanel.add(docIDField);
 		createDocPanel.add(orgLabel);
@@ -264,7 +264,7 @@ public class DocumentsPanel extends JPanel {
 		createDocPanel.add(dateDocField);
 		createDocPanel.add(addDateButton);
 
-		tabbedPane.addTab("�Ѿഷ�͡���", null, updateDocPanel, null);
+		tabbedPane.addTab("อัพเดทสถานะ", null, updateDocPanel, null);
 		updateDocPanel.add(docIDUpLabel);
 		updateDocPanel.add(docIDUpField);
 		updateDocPanel.add(sendRadioButton);

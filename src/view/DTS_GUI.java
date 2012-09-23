@@ -37,7 +37,7 @@ public class DTS_GUI extends JFrame {
 		leftPanel.setLayout(null);
 		
 		icon = new JLabel("");
-		icon.setIcon(new ImageIcon("C:\\Documents and Settings\\com\\My Documents\\workspace\\DocumentsTrackingSystem\\iconDTS.gif"));
+		icon.setIcon(new ImageIcon("asset/iconDTS.gif"));
 		icon.setBounds(10, 11, 202, 70);
 //		getContentPane().add(icon);
 	}

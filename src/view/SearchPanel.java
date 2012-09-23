@@ -116,7 +116,7 @@ public class SearchPanel extends JPanel {
 		
 		add(tabbedPane, "cell 0 0,grow");
 
-		tabbedPane.addTab("����", null, createDocPanel, null);
+		tabbedPane.addTab("ค้นหา", null, createDocPanel, null);
 		createDocPanel.add(searchLabel);
 		createDocPanel.add(searchField);
 		createDocPanel.add(searchByLabel);

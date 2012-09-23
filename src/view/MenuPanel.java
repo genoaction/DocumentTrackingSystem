@@ -35,12 +35,12 @@ public class MenuPanel extends JPanel {
 		menuPanel.setBackground(new Color(204, 204, 255));
 		menuPanel.setLayout(null);
 		
-		manageDocButton = new JButton("�Ѵ����͡���");
+		manageDocButton = new JButton("เพิ่มเอกสารใหม่");
 		manageDocButton.setForeground(Color.BLACK);
 		manageDocButton.setFont(new Font("Cordia New", Font.PLAIN, 21));
 		manageDocButton.setBounds(38, 51, 126, 33);
 		
-		searchButton = new JButton("����");
+		searchButton = new JButton("ค้นหา");
 		searchButton.setForeground(Color.BLACK);
 		searchButton.setFont(new Font("Cordia New", Font.PLAIN, 21));
 		searchButton.setBounds(38, 102, 126, 33);
