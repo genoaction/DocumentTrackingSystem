@@ -7,6 +7,7 @@ import java.sql.Timestamp;
  * @author Witsarut Mongkonphak
  *
  */
+
 public class Log {
 	private String barcode;
 	private Institute Destinaion;
