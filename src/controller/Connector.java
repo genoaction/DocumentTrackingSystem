@@ -1,7 +1,6 @@
 package controller;
 
 import java.sql.Date;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import model.Document;
@@ -14,7 +13,6 @@ import model.Log;
  *
  */
 public interface Connector {
-	// add
 	/**
 	 * Add only document to database.
 	 * @param doc

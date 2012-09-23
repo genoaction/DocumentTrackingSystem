@@ -9,7 +9,6 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-import javax.print.attribute.DateTimeSyntax;
 import javax.swing.JOptionPane;
 
 import model.Document;
@@ -48,7 +47,6 @@ public class DatabaseConnector implements Connector{
 			System.exit(1);
 		}
 	}
-
 
 	@Override
 	public void addDocument(Document doc) throws SQLException {
