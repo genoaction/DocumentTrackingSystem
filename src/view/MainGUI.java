@@ -47,6 +47,7 @@ public class MainGUI extends JFrame {
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// open new file windows.
+				
 			}
 		});
 		
